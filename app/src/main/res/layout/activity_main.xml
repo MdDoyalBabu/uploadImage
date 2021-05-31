@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_margin="10px"
+    tools:context=".MainActivity">
+
+   <Button
+       android:layout_weight="0.25"
+       android:layout_marginTop="30px"
+       android:text="image chose button"
+       android:id="@+id/chose_btn_id"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_weight="0.25"
+        android:layout_marginTop="10px"
+        android:hint="Enter your image name"
+        android:id="@+id/edittext_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_weight="2"
+        android:layout_marginTop="10px"
+        android:id="@+id/imageview_id"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_weight="0.16"
+        android:id="@+id/progressBar_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_weight="0.17"
+        android:id="@+id/saveImage_id"
+        android:layout_marginTop="20px"
+        android:text="save image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_weight="0.17"
+        android:id="@+id/show_image_id"
+        android:layout_marginTop="20px"
+        android:text="show image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
